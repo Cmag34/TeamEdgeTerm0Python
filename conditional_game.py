@@ -53,46 +53,48 @@ print("Then the ball gives the user gets a fortune")
 
 	# Randomly select a number from 0 - 19       
 	# Use that to select from the following responses:
-	select=random.randrange(1,20)
-	if  select=0
+
+question = input('Ask the fortune teller a question>> ')
+select= random.randint(0-19)
+if  select==0:
 	print(" It is certain.")
-	elif  select=1
+elif  select==1:
 	print("It is decidedly so.")
-	elif  select=2
+elif  select==2:
 	print("Without a doubt.")
-	elif  select=3
+elif  select==3:
 	print("Yes - definitely.")
-	elif  select=4
+elif  select==4:
 	print("You may rely on it.")
-	elif  select=5
+elif  select==5:
 	print("As I see it, yes.")
-	elif  select=6
+elif  select==6:
 	print("Most likely.")
-	elif  select=7
+elif  select==7:
 	print("Outlook good.")
-	elif  select=8
+elif  select==8:
 	print("Yes.")
-	elif  select=9
+elif  select==9:
 	print("Signs point to yes.")
-	elif  select=10
+elif  select==10:
 	print("Reply hazy, try again.")
-	elif  select=11
+elif  select==11:
 	print("Ask again later.")
-	elif  select=12
+elif  select==12:
 	print("Better not tell you now.")
-	elif  select=13
+elif  select==13:
 	print("Cannot predict now.")
-	elif  select=14
+elif  select==14:
 	print("Concentrate and ask again.")
-	elif  select=15
+elif  select==15:
 	print("Don't count on it.")
-	elif  select=16
+elif  select==16:
 	print("My reply is no.")
-	elif  select=17
+elif  select==17:
 	print("My sources say no.")
-	elif  select=18
+elif  select==18:
 	print("Outlook not so good.")
-	elif  select=19
+elif  select==19:
 	print("Very doubtful.")
 		
 
@@ -131,48 +133,48 @@ print("Then the ball gives the user gets a fortune")
 
 
 
-select=random.randrange(1,20)
-	if  select=0
+select1= input('For a second fortune, select a random number from 0-19>> ')
+if  select1==0:
 	print(" you suck.")
-	elif  select=1
+elif  select1==1:
 	print("unlikely.")
-	elif  select=2
+elif  select1==2:
 	print("no.")
-	elif  select=3
+elif  select1==3:
 	print("nope.")
-	elif  select=4
+elif  select1==4:
 	print("never.")
-	elif  select=5
+elif  select1==5:
 	print("this leads to a fatal ending.")
-	elif  select=6
+elif  select1==6:
 	print("hopefully.")
-	elif  select=7
+elif  select1==7:
 	print("sadly so.")
-	elif  select=8
+elif  select1==8:
 	print("Yes.")
-	elif  select=9
+elif  select1==9:
 	print("maybe.")
-	elif  select=10
+elif  select1==10:
 	print("Reply hazy, try again.")
-	elif  select=11
+elif  select1==11:
 	print("Ask again later.")
-	elif  select=12
+elif  select1==12:
 	print("Better not tell you now.")
-	elif  select=13
+elif  select1==13:
 	print("the future will tell you.")
-	elif  select=14
+elif  select1==14:
 	print("the past")
-	elif  select=15
+elif  select1==15:
 	print("Don't count on it.")
-	elif  select=16
+elif  select1==16:
 	print("My reply is no.")
-	elif  select=17
+elif  select1==17:
 	print("My sources say deffinetly not.")
-	elif  select=18
+elif  select1==18:
 	print("not likely my friend.")
-	else:
+else:
 	print("Very doubtful.")
-		
+	
 
 
 

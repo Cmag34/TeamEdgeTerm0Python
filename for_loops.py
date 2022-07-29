@@ -26,6 +26,8 @@ for x in range(11):
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
 
+for year in range(17):
+    print("Happy Birthday!"+str(year))
 
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
@@ -38,29 +40,38 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 5 animals. You provide the animals.
-animals = []
+animals = ["worm","pigeon","whale","owl","seal"]
 
 #-->TODO: Print all the animals in the array with a for loop. 
 
-
-
+print()
+for y in animals:
+    print("The animal is:" + y)
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
 
 
 #The line below makes a random number between 0-50 and assigns it to the random variable
-random = random.randint(0, 50)
+#random = random.randint(0, 50)
 
 #this if/else statement checks if the number is even using the modulo operator (%)
-if random % 2 == 0:
-    print(str(random) + " is even!")
-else:
-    print(str(random) + " is odd!")
+#if random % 2 == 0:
+    #print(str(random) + " is even!")
+#else:
+    #print(str(random) + " is odd!")
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
 
+def num1():
+    for x in range(100,0,-1):
+        if x % 2 == 0:
+            print(x)
 
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
-
+def num2():
+    random = random.randint(0,100)
+    for x in range(random,0,-1):
+        if x % 2 != 0:
+            print(x)
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
@@ -72,15 +83,21 @@ else:
     print("No, that color is not one of my favorites")
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
+cities = ['New York' , 'Seoul' , 'London' ,'Rio de Janeiro']
 
 
 
 #-->TODO Write function to prompt the user to "Guess" if an element is present in your list. Store their response in a variable. 
 #   --> If their guess is in your list, print CONGRATULATIONS!
-
+def geuss():
+    city = input('Type a city and see if it is one of my favorite cities! >> ')
+    if city in cities:
+        print("CONGRATULATIONS!")
+    else:
+        print("No, that city is not one of my favorites")
 
 #-->TODO Call your function.
-
+geuss()
 
 
 print("------------------- CHALLENGE 5 : Nested ------------------")
@@ -98,6 +115,11 @@ for color in colors:
 
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
-
+def select():
+    sentence = input('Type a sentence >> ')
+    print(sentence)
+    for s in sentence:
+        print(" - " + s)
+select()
 
 #-->CHALLENGE: Let the user know which word is the shortest one!

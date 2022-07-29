@@ -24,6 +24,7 @@ print("------------------- CHALLENGE 1 : DEFINE    -------------------")
 dictionary = {
     "name": "box",
     "is_empty": True
+    
 }
 #working with the dictionary:
 dictionary["length"] = 12
@@ -40,9 +41,22 @@ print(dictionary)
 
 ##################################  MY dictionary ########################### #/
 
+#dictionary["colors"]= ["red", "blue", "yellow"]
 
 
+dictionary = {
+    "name": "school",
+    "location": "Manhattan",
+    "is_empty": True,
+    "capacity":200,
+    "students": ["Chantel", "Tiffany", "Alex","Stephanie"]
+    
+}
 
+print(f"{dictionary['name']} has a capacity of {dictionary['capacity']}")
+print(f"{dictionary['name']} is in {dictionary['location']}")
+dictionary["location"] = "uptown"
+print(f"The students at {dictionary['name']} are {dictionary['students']}")
 
 
 ########################################################################## #/
@@ -68,8 +82,17 @@ print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 #-->TODO: Call the method.
 
+x = dictionary.get("capacity")
 
+print(x)
+
+
+element = dictionary.pop('students')
+
+print('The popped element is:', element)
 
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
-#-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+#-->TODO: Put it all together using a string literal to tell the story of your dictiona
+# ry!
+print(f"The students love {dictionary['name']}")
